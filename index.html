@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housaty</title>
+    <link rel="stylesheet" href="housaty.css">
+    <script>
+      function login(){
+        window.open("housaty_error.html",'_self')
+      }
+
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="back-ground">
+        <div class="right-section">
+            <span>HOUSATY</span>
+        </div>
+        <div class="left-section">
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <ul id="nav-menu">
+                <li>Home</li>
+                <li>Houses</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="titles">
+            <span class="name">Find Your Dream Apartment with</span><br>
+            <span class="adv">Housaty.com</span>
+            <br>
+            <p id="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eligendi eaque suscipit ea quis laborum ab dignissimos, praesentium porro facilis, blanditiis explicabo voluptatibus ex velit debitis, cumque perferendis labore molestias lorem!</p>
+            <button class="rent">View available for rent</button>
+        </div>
+        <div class="photo">
+            <img src="images/undraw_apartment_rent_o-0-ut.svg"/>
+        </div>
+    </div>
+</div>
+<div class="Section2">
+    <div class="chart">
+        <img src="images/undraw_charts_re_5qe9.svg">
+    </div>
+    <div class="cont">
+        <span class="title">Amazing prices compared to others</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem aliquam iste rerum sunt, accusantium quibusdam magnam deserunt. Velit repellat veniam omnis impedit doloremque aut quas, ducimus blanditiis accusamus pariatur nesciunt!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto excepturi quis ipsa ipsum veritatis sit laborum rem quae sapiente est mollitia, repudiandae itaque. Sunt velit repellat magnam inventore, maxime cupiditate!
+        </p>
+    </div>
+</div>
+<div class="section3">
+    <span id="title">Available Houses</span>
+    <div class="row1">
+        <div class="card1">
+            <img src="images/wp2464213-beautiful-house-wallpapers.jpg" class="photo-view"/>
+            <span class="description">house in maadi</span>
+            <div class="details">
+                <h6 class="price">120$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="images/wp2464214-beautiful-house-wallpapers.jpg" class="photo-view" />
+            <span class="description">house in Tagamoa</span>
+            <div class="details">
+                <h6 class="price">200$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+        <div class="card3">
+            <img src="images/wp2464219-beautiful-house-wallpapers.jpg" class="photo-view" />
+            <span class="description">house in Madenati</span>
+            <div class="details">
+                <h6 class="price">190$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="card1">
+            <img src="images/wp2464263-beautiful-house-wallpapers.jpg" class="photo-view" />
+            <span class="description">house in Zayed</span>
+            <div class="details">
+                <h6 class="price">250$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="images/wp2464230-beautiful-house-wallpapers.jpg" class="photo-view" />
+            <span class="description">house in Sahel</span>
+            <div class="details">
+                <h6 class="price">350$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+        <div class="card3">
+            <img src="images/wp2464272-beautiful-house-wallpapers.jpg" class="photo-view" />
+            <span class="description">house in Dubai</span>
+            <div class="details">
+                <h6 class="price">980$ Per day</h6>
+                <button class="book" style="height: 50px;" onclick="login()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <button class="rent load" onclick="login()"> Load more</button>
+</div>
+<script src="housaty.js"></script>
+</body>
+</html>
