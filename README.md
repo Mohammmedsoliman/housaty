@@ -1,3 +1,4 @@
+![banner](images/ban-er.png)
 # 🏠 Housaty
 
 > My very first web development project.
